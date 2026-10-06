@@ -1,0 +1,1347 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://lehorse.kem108.dev/
+Subject: horse
+Date: Tue, 29 Sep 2026 11:30:39 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--oOukqBwuq63PngjxD6HRO65MK2TP1b7wU4er0rG17n----"
+
+
+------MultipartBoundary--oOukqBwuq63PngjxD6HRO65MK2TP1b7wU4er0rG17n----
+Content-Type: text/html
+Content-ID: <frame-2AD0CDBCCD10824F87390C947CDED189@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://lehorse.kem108.dev/
+
+<!DOCTYPE html><html lang=3D"en"><plasmo-csui id=3D"brisk-extension-shadow-=
+root-pcblbflgdkdfdjpjifeppkljdnaekohj" data-extension-version=3D"1.0.418" d=
+ata-extension-name=3D"Brisk Teaching - AI that Works Where Teachers Work" d=
+ata-brisk-extension-shadow-host=3D"true" style=3D"z-index: 2147483647;"><te=
+mplate shadowmode=3D"open"><div id=3D"plasmo-shadow-container" class=3D"new=
+s-article-without-article-tag" style=3D"z-index: 2147483647; position: rela=
+tive;"><div id=3D"plasmo-overlay-0" class=3D"plasmo-csui-container" style=
+=3D"display: flex; position: absolute; top: 0px; left: 0px;"><div class=3D"=
+content-popup right collapsed" data-testid=3D"brisk-root" dir=3D"ltr" lang=
+=3D"en-US" style=3D"height: 30px; width: 30px;"></div></div></div></templat=
+e></plasmo-csui><head><meta http-equiv=3D"Content-Type" content=3D"text/htm=
+l; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:=
+css-08ce6baf-4f61-4957-8f99-b2adc073997b@mhtml.blink" />
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1,m=
+aximum-scale=3D1,user-scalable=3Dno">
+<title>horse</title>
+<meta name=3D"description" content=3D"horse tool">
+<meta property=3D"og:title" content=3D"horse">
+<meta property=3D"og:description" content=3D"horse tool">
+<meta name=3D"twitter:title" content=3D"horse">
+<meta name=3D"twitter:description" content=3D"horse tool">
+<meta name=3D"theme-color" content=3D"#14081c">
+<link rel=3D"icon" href=3D"data:image/svg+xml,%3Csvg xmlns=3D'http://www.w3=
+.org/2000/svg' viewBox=3D'0 0 100 100'%3E%3Ctext y=3D'.9em' font-size=3D'90=
+'%3E%F0%9F%90%B4%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+<div id=3D"app">
+  <canvas id=3D"view" tabindex=3D"0" data-engine=3D"three.js r186"></canvas=
+>
+
+  <!-- =3D=3D=3D=3D=3D HUD =3D=3D=3D=3D=3D -->
+  <div id=3D"hud" class=3D"hidden">
+    <div id=3D"areaBox"><canvas id=3D"pxArea" class=3D"pix"></canvas><canva=
+s id=3D"pxHorses" class=3D"pix"></canvas><canvas id=3D"pxCombo" class=3D"pi=
+x sm"></canvas></div>
+    <div id=3D"minimapWrap"><canvas id=3D"minimap" width=3D"150" height=3D"=
+150"></canvas></div>
+    <div id=3D"topCenter">
+      <canvas id=3D"pxScore" class=3D"pix lg"></canvas>
+      <canvas id=3D"pxNet" class=3D"pix sm"></canvas>
+      <div id=3D"bossBar" class=3D"hidden"><canvas class=3D"pix sm lbl" id=
+=3D"pxBoss"></canvas><div class=3D"bar"><div class=3D"fill"></div></div></d=
+iv>
+    </div>
+    <div id=3D"topRight">
+      <canvas id=3D"pxTime" class=3D"pix"></canvas>
+      <canvas id=3D"pxMode" class=3D"pix sm"></canvas>
+      <canvas id=3D"pxHeat" class=3D"pix sm"></canvas>
+      <div id=3D"fps" class=3D"hidden"></div>
+    </div>
+    <div id=3D"arrow" class=3D"hidden"><div class=3D"tri"></div><div class=
+=3D"dist"></div></div>
+    <div id=3D"crosshair"><i></i><i></i><i></i><i></i><div id=3D"hitmarker"=
+></div></div>
+    <div id=3D"bottomLeft">
+      <canvas id=3D"pxHearts" class=3D"pix"></canvas>
+      <canvas id=3D"pxWings" class=3D"pix"></canvas>
+      <div class=3D"pbar blue"><canvas id=3D"pxBlue" class=3D"pix sm"></can=
+vas><div class=3D"track"><i id=3D"blueFill"></i></div></div>
+      <div class=3D"pbar pink"><canvas id=3D"pxPink" class=3D"pix sm"></can=
+vas><div class=3D"track"><i id=3D"pinkFill"></i></div></div>
+      <canvas id=3D"pxCrew" class=3D"pix sm"></canvas>
+    </div>
+    <div id=3D"wepBox">
+      <canvas id=3D"pxWep" class=3D"pix"></canvas>
+      <div class=3D"pbar gold hidden" id=3D"wepBar"><canvas id=3D"pxWepBar"=
+ class=3D"pix sm"></canvas><div class=3D"track"><i id=3D"wepFill"></i></div=
+></div>
+    </div>
+    <div id=3D"prompt"></div>
+    <div id=3D"banner" class=3D"hidden"><div class=3D"t"></div><div class=
+=3D"s"></div></div>
+    <div id=3D"hint">WASD move =C2=B7 Mouse aim =C2=B7 Click shoot =C2=B7 1=
+-7 weapons =C2=B7 E eat =C2=B7 Q throw =C2=B7 F car =C2=B7 V view =C2=B7 Es=
+c pause</div>
+    <div id=3D"floaters"></div>
+    <div id=3D"dmgDir"></div>
+    <div id=3D"vignette"></div>
+    <div id=3D"golden"></div>
+  </div>
+
+  <!-- =3D=3D=3D=3D=3D lobby HUD =3D=3D=3D=3D=3D -->
+  <canvas id=3D"espCanvas" class=3D"hidden"></canvas>
+  <button id=3D"betaBtn" class=3D"hidden" title=3D"The 6.0 beta: the vault,=
+ voice chat, the online lobby and more">6.0 BETA =E2=96=B8 play it</button>
+  <button id=3D"voiceBtn" class=3D"hidden" title=3D"Voice chat with the peo=
+ple in your room (M mutes you)">=F0=9F=8E=A4 Voice off</button>
+  <div id=3D"lobbyHud" class=3D"hidden">
+    <div class=3D"lhTop"><canvas id=3D"pxLogo" class=3D"pix lg"></canvas><c=
+anvas id=3D"pxWho" class=3D"pix sm"></canvas><div id=3D"lhXp" class=3D"xpba=
+r"><i></i></div></div>
+    <div class=3D"lhPts"><canvas id=3D"pxPts" class=3D"pix"></canvas></div>
+    <div id=3D"lprompt"></div>
+    <div class=3D"lhHint">WASD walk =C2=B7 Shift run =C2=B7 Space jump =C2=
+=B7 E use =C2=B7 G wave =C2=B7 V view =C2=B7 Esc menu</div>
+  </div>
+
+  <!-- =3D=3D=3D=3D=3D watching a room =3D=3D=3D=3D=3D -->
+  <div id=3D"watchHud" class=3D"hidden">
+    <canvas id=3D"pxWatch" class=3D"pix"></canvas>
+    <div class=3D"wh">Tab / Q / E switch player =C2=B7 F free camera (WASD,=
+ Space, C) =C2=B7 Esc leave</div>
+    <button class=3D"small" id=3D"watchLeave">Leave</button>
+  </div>
+
+  <!-- =3D=3D=3D=3D=3D cutscene overlays =3D=3D=3D=3D=3D -->
+  <div id=3D"caption" class=3D"hidden"><div class=3D"t"></div><div class=3D=
+"s"></div></div>
+  <div id=3D"bigText" class=3D"hidden"><div class=3D"t"></div><div class=3D=
+"s"></div></div>
+  <div id=3D"choice" class=3D"hidden">
+    <button class=3D"big danger" data-choice=3D"fight"><b>1</b> FIGHT</butt=
+on>
+    <button class=3D"big" data-choice=3D"give"><b>2</b> GIVE THE BUCKET</bu=
+tton>
+  </div>
+  <button id=3D"skipBtn" class=3D"hidden small">Skip intro =E2=96=B8 <span>=
+(Space)</span></button>
+
+  <!-- =3D=3D=3D=3D=3D screens =3D=3D=3D=3D=3D -->
+  <div id=3D"screens">
+    <div class=3D"screen" id=3D"scrLoading">
+      <div class=3D"logo">HORSE</div>
+      <div class=3D"tag">Building the lobby=E2=80=A6</div>
+      <div class=3D"loadbar"><i id=3D"loadFill" style=3D"width: 75%;"></i><=
+/div>
+      <div id=3D"loadErr" class=3D"hidden"></div>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrOnline">
+      <h2>PLAY ONLINE</h2>
+      <div class=3D"note">Up to 8 people in one palace (and up to 8 more wa=
+tching). Everyone gets their own horses and heat; you see each other, your =
+cars and your shots. No chat, just chaos.</div>
+      <div class=3D"form online">
+        <div class=3D"who"><label for=3D"netNameIn">Your name</label> <inpu=
+t id=3D"netNameIn" type=3D"text" maxlength=3D"16" autocomplete=3D"off" spel=
+lcheck=3D"false" aria-label=3D"Your name"> <button class=3D"small" id=3D"ne=
+tReroll" title=3D"Random horse name">Random</button></div>
+        <button class=3D"big" id=3D"netCreate">Make a room</button>
+        <div class=3D"join"><input id=3D"netCode" type=3D"text" maxlength=
+=3D"8" placeholder=3D"CODE" autocomplete=3D"off" spellcheck=3D"false" aria-=
+label=3D"Room code"><button class=3D"big" id=3D"netJoin">Join</button></div=
+>
+        <label class=3D"chk"><input type=3D"checkbox" id=3D"netPub"> Show m=
+y rooms in the server list</label>
+        <div class=3D"note small" id=3D"netStatus"></div>
+        <div class=3D"sub">Open rooms right now</div>
+        <div class=3D"rooms" id=3D"netRooms"></div>
+        <button class=3D"small" id=3D"netRefresh">Refresh list</button>
+      </div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrSettings">
+      <h2>SETTINGS</h2>
+      <div class=3D"form wide">
+        <label class=3D"gfxpick">Graphics <span class=3D"seg" id=3D"gfxSeg"=
+><button data-gfx=3D"auto">Auto</button><button data-gfx=3D"ultra">Ultra Pe=
+rformance</button><button data-gfx=3D"perf">Performance</button><button dat=
+a-gfx=3D"low">Low</button><button data-gfx=3D"medium">Medium</button><butto=
+n data-gfx=3D"high">High</button><button data-gfx=3D"shaders" class=3D"shad=
+erbtn">Shaders</button><button data-gfx=3D"custom">Custom</button></span></=
+label>
+        <div class=3D"note small" id=3D"gfxNote">Low is tuned for school Ch=
+romebooks.</div>
+        <button class=3D"small shaderbtn" id=3D"btnPacks">Shader packs</but=
+ton>
+        <div id=3D"gfxCustom" class=3D"gfxgrid"></div>
+        <div class=3D"shaderwarn hidden" id=3D"shaderWarn" role=3D"alertdia=
+log" aria-label=3D"Shaders warning">
+          <div class=3D"sw-title">!! SHADERS !!</div>
+          <div class=3D"sw-big">FOR BEEFY GAMING PCs ONLY</div>
+          <div class=3D"sw-boom">Turn these on with a school Chromebook and=
+ your Chromebook WILL explode.</div>
+          <div class=3D"sw-small">Light shafts through the haze, ambient oc=
+clusion, big bloom, film grain, 125% resolution. It will run at a slideshow=
+ on anything weak.</div>
+          <div class=3D"sw-row"><button id=3D"shaderYes">My PC is beefy. Tu=
+rn them on</button><button id=3D"shaderNo">No thanks</button></div>
+        </div>
+        <label>Mouse / trackpad sensitivity <input type=3D"range" id=3D"set=
+Sens" min=3D"0.3" max=3D"2.5" step=3D"0.05"></label>
+        <label>Field of view <input type=3D"range" id=3D"setFov" min=3D"60"=
+ max=3D"95" step=3D"1"></label>
+        <label>Volume <input type=3D"range" id=3D"setVol" min=3D"0" max=3D"=
+1" step=3D"0.05"></label>
+        <label class=3D"chk"><input type=3D"checkbox" id=3D"setMusic"> Musi=
+c</label>
+        <label class=3D"chk"><input type=3D"checkbox" id=3D"setInvert"> Inv=
+ert Y</label>
+        <label class=3D"chk"><input type=3D"checkbox" id=3D"setFps"> Show F=
+PS</label>
+        <label class=3D"chk"><input type=3D"checkbox" id=3D"setSkip"> Alway=
+s skip the intro</label>
+      </div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrPacks">
+      <h2>SHADER PACKS</h2>
+      <div class=3D"packs">
+        <div class=3D"packlist" id=3D"packList"></div>
+        <div class=3D"packinfo">
+          <div class=3D"packname" id=3D"packName"></div>
+          <div class=3D"note small" id=3D"packDesc"></div>
+          <div class=3D"row"><button class=3D"big" id=3D"packUse">Use this =
+pack</button><button class=3D"small" id=3D"packCopy">Copy &amp; edit</butto=
+n><button class=3D"small" id=3D"packNew">New pack</button><button class=3D"=
+small" id=3D"packRename">Rename</button><button class=3D"small" id=3D"packD=
+elete">Delete</button></div>
+          <div class=3D"note small" id=3D"packOptsNote"></div>
+          <div id=3D"packOpts" class=3D"gfxgrid"></div>
+          <div class=3D"row"><button class=3D"small" id=3D"packImport">Add =
+pack (code)</button><button class=3D"small" id=3D"packFile">Add pack (file)=
+</button><button class=3D"small" id=3D"packExport">Copy pack code</button><=
+button class=3D"small" id=3D"packSave">Save as file</button></div>
+          <textarea id=3D"packCode" class=3D"hidden" rows=3D"3" maxlength=
+=3D"4000" placeholder=3D"Paste a horse shader pack code here (HSP1:...)"></=
+textarea>
+          <input type=3D"file" id=3D"packFileIn" accept=3D".horsepack,.json=
+,.txt" class=3D"hidden">
+          <div class=3D"note small" id=3D"packMsg"></div>
+        </div>
+      </div>
+      <button class=3D"small back" id=3D"packsBack">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrControls">
+      <h2>CONTROLS</h2>
+      <div class=3D"controls">
+        <div><b>W A S D</b> walk / drive</div>
+        <div><b>Mouse</b> look &amp; aim (trackpad works)</div>
+        <div><b>Arrow keys</b> look (no mouse needed)</div>
+        <div><b>Click</b> or <b>J</b> shoot</div>
+        <div><b>Space</b> jump / handbrake drift</div>
+        <div><b>E</b> eat chicken (heal / speed / repair car)</div>
+        <div><b>Q</b> throw a drumstick =E2=80=94 horses that eat it join y=
+our crew</div>
+        <div><b>F</b> get in / out of a car</div>
+        <div><b>H</b> honk</div>
+        <div><b>R</b> un-stick the car</div>
+        <div><b>V</b> first / third person</div>
+        <div><b>T</b> host panel: time of day, events, rules</div>
+        <div><b>1 - 7</b> or <b>wheel</b> switch weapon</div>
+        <div><b>Esc</b> pause</div>
+      </div>
+      <div class=3D"note">Refill your bucket at the red KFC counters. The f=
+loor is flooded: splash through it, drive through it, drift on it. Shooting=
+ and ramming raises your heat =E2=80=94 horse cars will hunt you. Break lin=
+e of sight to cool down.</div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrPortal">
+      <h2 id=3D"portalTitle">FREE ROAM</h2>
+      <div class=3D"form portal">
+        <div id=3D"portalDesc" class=3D"note"></div>
+        <div id=3D"portalBest" class=3D"note small"></div>
+        <div class=3D"row"><button class=3D"big" id=3D"portalGo">ENTER</but=
+ton><button class=3D"small" data-go=3D"back">Back</button></div>
+      </div>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrLobbyMenu">
+      <h2>HORSE</h2>
+      <div class=3D"col">
+        <button class=3D"big" id=3D"btnLobbyResume">Resume</button>
+        <button class=3D"small" id=3D"btnLobbyHost">Time of day (T)</button=
+>
+        <button class=3D"small" data-go=3D"account">Account / sign in</butt=
+on>
+        <button class=3D"small" data-go=3D"settings">Settings</button>
+        <button class=3D"small" data-go=3D"controls">Controls</button>
+        <button class=3D"small" data-go=3D"notes">What's new</button>
+        <button class=3D"small" id=3D"btnLobbyFs">Fullscreen</button>
+        <button class=3D"small hidden" id=3D"btnOgMode">OG mode (the first =
+horse)</button>
+        <button class=3D"small hidden" id=3D"btnBetaMenu">Play the 6.0 beta=
+ (the vault)</button>
+      </div>
+    </div>
+
+    <div class=3D"screen hidden side" id=3D"scrWardrobe">
+      <div class=3D"sidepanel">
+        <div class=3D"sphead"><h2>WARDROBE</h2><div class=3D"points">=F0=9F=
+=8D=97 <span id=3D"wardPoints">0</span></div></div>
+        <div class=3D"tabs" id=3D"wardTabs"><button data-wt=3D"skin" class=
+=3D"on">Skin</button><button data-wt=3D"colors">Colours</button><button dat=
+a-wt=3D"acc">Accessories</button><button data-wt=3D"bucket">Bucket</button>=
+</div>
+        <div id=3D"wardBody" class=3D"ward"></div>
+        <div class=3D"note small" id=3D"wardNote"></div>
+        <button class=3D"small back" data-go=3D"back">Done</button>
+      </div>
+      <div class=3D"dragHint">Drag to turn around</div>
+    </div>
+
+    <div class=3D"screen hidden side" id=3D"scrArmory">
+      <div class=3D"sidepanel">
+        <div class=3D"sphead"><h2>ARMORY</h2><div class=3D"points">=F0=9F=
+=8D=97 <span id=3D"armPoints">0</span></div></div>
+        <div class=3D"note small" id=3D"armLevel"></div>
+        <div id=3D"armBody" class=3D"ward"></div>
+        <div class=3D"note small" id=3D"armNote">Unlock weapons with chicke=
+n points once you reach their level. In the palace, press 1-7 or roll the m=
+ouse wheel to switch.</div>
+        <button class=3D"small back" data-go=3D"back">Done</button>
+      </div>
+      <div class=3D"dragHint">Every weapon you own, on the rack</div>
+    </div>
+
+    <div class=3D"screen hidden side" id=3D"scrGarage">
+      <div class=3D"sidepanel">
+        <div class=3D"sphead"><h2>GARAGE</h2><div class=3D"points">=F0=9F=
+=8D=97 <span id=3D"garPoints">0</span></div></div>
+        <div class=3D"tabs" id=3D"garTabs"><button data-gt=3D"model" class=
+=3D"on">Cars</button><button data-gt=3D"paint">Paint</button><button data-g=
+t=3D"pattern">Stripes &amp; flames</button></div>
+        <div id=3D"garBody" class=3D"ward"></div>
+        <div class=3D"note small" id=3D"garNote"></div>
+        <button class=3D"small back" data-go=3D"back">Done</button>
+      </div>
+      <div class=3D"dragHint">Drag to spin the turntable</div>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrStudio">
+      <h2>STUDIO</h2>
+      <div id=3D"studioBody" class=3D"form wide"></div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrHost">
+      <h2>HOST PANEL</h2>
+      <div class=3D"note small" id=3D"hostWho"></div>
+      <div class=3D"form wide host">
+        <div class=3D"sub">Time of day</div>
+        <div class=3D"seg" id=3D"hostTimes"></div>
+        <label class=3D"gfxrow">Clock <span class=3D"rng"><input type=3D"ra=
+nge" id=3D"hostClock" min=3D"0" max=3D"24" step=3D"0.25" aria-label=3D"Time=
+ of day"><b class=3D"val" id=3D"hostClockV"></b></span></label>
+        <label class=3D"gfxrow">Day and night cycle <span class=3D"seg" id=
+=3D"hostCycle"></span></label>
+        <div class=3D"sub hidden" id=3D"hostModeSub">Mode (online rooms)</d=
+iv>
+        <div class=3D"seg hidden" id=3D"hostModes"></div>
+        <div class=3D"sub">Events</div>
+        <div class=3D"evgrid" id=3D"hostEvents"></div>
+        <div class=3D"note small" id=3D"hostEvNote"></div>
+        <div class=3D"sub">Rules</div>
+        <div class=3D"evgrid" id=3D"hostMods"></div>
+        <div class=3D"note small" id=3D"hostModNote"></div>
+      </div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrLift">
+      <h2>ELEVATOR</h2>
+      <div class=3D"note small">Pick a floor.</div>
+      <div class=3D"grid weps" id=3D"liftBody"></div>
+      <button class=3D"small back" data-go=3D"back">Stay here</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrSpawn">
+      <h2>SPAWN</h2>
+      <div class=3D"note small" id=3D"spawnWho"></div>
+      <div class=3D"form wide host" id=3D"spawnBody"></div>
+      <div class=3D"form wide host" id=3D"spawnSpecial"></div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrNotes">
+      <h2>WHAT'S NEW</h2>
+      <div id=3D"notesList" class=3D"notes"></div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrAccount">
+      <h2>ACCOUNT</h2>
+      <div class=3D"form">
+        <div id=3D"acctSignedIn" class=3D"col hidden">
+          <div class=3D"note" id=3D"acctWho"></div>
+          <div class=3D"note small">Your chicken, unlocks, outfits, cars an=
+d levels are saved to your account, so they follow you to any computer.</di=
+v>
+          <button class=3D"small" id=3D"acctSync">Save to my account now</b=
+utton>
+          <button class=3D"small" id=3D"acctOut">Sign out</button>
+        </div>
+        <div id=3D"acctSignedOut" class=3D"col">
+          <div class=3D"note small">Sign in to keep your chicken, unlocks, =
+outfits, cars and levels on every computer you use.</div>
+          <div id=3D"gsiBtn" class=3D"gsibox"></div>
+          <div class=3D"note small">or with an email and password</div>
+          <label>Email <input type=3D"email" id=3D"acctEmail" autocomplete=
+=3D"email" maxlength=3D"254" spellcheck=3D"false"></label>
+          <label>Password <input type=3D"password" id=3D"acctPass" autocomp=
+lete=3D"current-password" maxlength=3D"200"></label>
+          <label class=3D"hidden" id=3D"acctNameRow">Name <input type=3D"te=
+xt" id=3D"acctName" maxlength=3D"16" spellcheck=3D"false"></label>
+          <div class=3D"row"><button class=3D"small" id=3D"acctLogin">Sign =
+in</button><button class=3D"small" id=3D"acctRegister">Create account</butt=
+on></div>
+        </div>
+        <div class=3D"note small" id=3D"acctMsg"></div>
+        <div class=3D"note small">What we keep and why: <a href=3D"https://=
+lehorse.kem108.dev/privacy.html" target=3D"_blank" rel=3D"noopener">privacy=
+</a></div>
+      </div>
+      <button class=3D"small back" data-go=3D"back">Back</button>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrPause">
+      <h2>PAUSED</h2>
+      <div class=3D"col">
+        <button class=3D"big" id=3D"btnResume">Resume</button>
+        <button class=3D"small" id=3D"btnHost">Host panel (T)</button>
+        <button class=3D"small hidden" id=3D"btnSpawn">Spawn menu (B)</butt=
+on>
+        <button class=3D"small" data-go=3D"account">Account / sign in</butt=
+on>
+        <button class=3D"small" data-go=3D"settings">Settings</button>
+        <button class=3D"small" data-go=3D"controls">Controls</button>
+        <div class=3D"note small hidden" id=3D"pauseRoom"></div>
+        <button class=3D"small hidden" id=3D"btnCopyRoom">Copy room link</b=
+utton>
+        <button class=3D"small hidden" id=3D"btnLeaveRoom">Leave room</butt=
+on>
+        <button class=3D"small" id=3D"btnEndRun">End run &amp; bank points<=
+/button>
+        <button class=3D"small" id=3D"btnQuit">Back to lobby</button>
+      </div>
+    </div>
+
+    <div class=3D"screen hidden" id=3D"scrResults">
+      <h2 id=3D"resTitle">RUN OVER</h2>
+      <div id=3D"resSub"></div>
+      <div id=3D"resScore">0</div>
+      <div id=3D"resBest"></div>
+      <div id=3D"resStats"></div>
+      <div id=3D"resBank"></div>
+      <div id=3D"resUnlock"></div>
+      <div class=3D"row">
+        <button class=3D"big" id=3D"btnAgain">Play again</button>
+        <button class=3D"small" id=3D"btnMenu">Lobby</button>
+      </div>
+    </div>
+  </div>
+  <div id=3D"toasts"></div>
+  <div id=3D"giftPop" class=3D"giftpop"><div class=3D"t"></div><div class=
+=3D"s"></div></div>
+  <div id=3D"autoSaved" class=3D"autosaved"></div>
+  <button id=3D"fsBtn" title=3D"Fullscreen" aria-label=3D"Fullscreen"><svg =
+viewBox=3D"0 0 24 24" width=3D"22" height=3D"22" fill=3D"none" stroke=3D"cu=
+rrentColor" stroke-width=3D"2.6" stroke-linecap=3D"round"><path d=3D"M4 9V4=
+h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg></button>
+  <div id=3D"lockHint" class=3D"hidden">Click to play</div>
+</div>
+
+
+
+
+
+
+<!----comment node----><div id=3D"hl-aria-live-message-container" aria-live=
+=3D"polite" class=3D"visually-hidden"></div><div id=3D"hl-aria-live-alert-c=
+ontainer" role=3D"alert" aria-live=3D"assertive" class=3D"visually-hidden">=
+</div></body></html>
+------MultipartBoundary--oOukqBwuq63PngjxD6HRO65MK2TP1b7wU4er0rG17n----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-08ce6baf-4f61-4957-8f99-b2adc073997b@mhtml.blink
+
+@charset "utf-8";
+
+:root { --pink: #ff3fb4; --pink2: #ff9ae0; --yellow: #ffd23f; --gold: #d9a5=
+3a; --dark: #14081c; --dark2: #231030; --ink: #12061c; --cyan: #3fe0ff; --r=
+ed: #ff3355; --green: #7dff9a; --panel: #1c0c28; --px: "HorsePixel", ui-mon=
+ospace, monospace; --fs: 20px; --fs2: 40px; --b: 4px; }
+
+@media (min-height: 980px) {
+  :root { --fs: 30px; --fs2: 60px; --b: 6px; }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0px; height: 100%; background: rgb(12, 6, 16); overflo=
+w: hidden; color: rgb(255, 255, 255); font-family: var(--px); font-size: va=
+r(--fs); line-height: 1.3; user-select: none; -webkit-font-smoothing: none;=
+ }
+
+#app { position: fixed; inset: 0px; }
+
+#view { position: absolute; inset: 0px; width: 100%; height: 100%; display:=
+ block; outline: none; background: rgb(12, 6, 16); }
+
+.hidden { display: none !important; }
+
+button { font-family: var(--px); font-size: var(--fs); cursor: pointer; bor=
+der: 0px; color: var(--ink); line-height: 1.2; }
+
+button:focus-visible { outline: var(--b) solid var(--cyan); outline-offset:=
+ 2px; }
+
+#screens { position: absolute; inset: 0px; pointer-events: none; }
+
+.screen { position: absolute; inset: 0px; pointer-events: auto; display: fl=
+ex; flex-direction: column; align-items: center; justify-content: flex-star=
+t; gap: 14px; padding: 16px; overflow-y: auto; background: rgba(12, 6, 16, =
+0.84); }
+
+.screen::before, .screen::after { content: ""; margin: auto; }
+
+.screen > * { flex-shrink: 0; }
+
+#scrLoading { background: rgb(12, 6, 16); }
+
+.logo { font-size: calc(var(--fs2) * 2.5); line-height: 1; color: rgb(255, =
+255, 255); letter-spacing: 0.02em; text-shadow: 6px 6px 0 var(--pink), 12px=
+ 12px 0 var(--ink), 0 0 24px rgba(255, 63, 180, 0.8); }
+
+.tag { color: var(--yellow); text-align: center; text-shadow: 2px 2px 0 var=
+(--ink); }
+
+h2 { margin: 0px 0px 4px; font-size: var(--fs2); font-weight: normal; color=
+: var(--yellow); text-shadow: 4px 4px 0 var(--pink), 8px 8px 0 var(--ink); =
+letter-spacing: 0.02em; }
+
+.topbar { position: absolute; top: 14px; right: 70px; left: 16px; display: =
+flex; justify-content: flex-end; }
+
+.points { background: var(--ink); border: var(--b) solid var(--yellow); pad=
+ding: 4px 14px; color: var(--yellow); box-shadow: rgb(0, 0, 0) 4px 4px 0px;=
+ }
+
+.modes { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center=
+; margin-top: 8px; }
+
+.mode, .daily { background: var(--yellow); padding: 12px 14px; width: min(2=
+80px, 90vw); text-align: left; border: var(--b) solid var(--ink); box-shado=
+w: 6px 6px 0 var(--pink); transition: transform 0.06s steps(1), box-shadow =
+0.06s steps(1); }
+
+.mode:hover, .daily:hover, .mode:focus-visible, .daily:focus-visible { tran=
+sform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--pink); }
+
+.mode:active, .daily:active { transform: translate(3px, 3px); box-shadow: 3=
+px 3px 0 var(--pink); }
+
+.mode .n, .daily .n { font-size: var(--fs); }
+
+.mode .d, .daily .d { font-size: 20px; margin-top: 6px; color: rgb(58, 26, =
+48); line-height: 1.2; }
+
+.mode .b, .daily .b { font-size: 20px; margin-top: 6px; color: rgb(138, 26,=
+ 90); min-height: 20px; }
+
+@media (min-height: 980px) {
+  .mode .d, .daily .d, .mode .b, .daily .b { font-size: 20px; }
+}
+
+.daily { width: min(876px, 90vw); background: var(--pink); color: rgb(255, =
+255, 255); box-shadow: 6px 6px 0 var(--yellow); }
+
+.daily:hover { box-shadow: 9px 9px 0 var(--yellow); }
+
+.daily .d { color: rgb(255, 255, 255); }
+
+.daily .b { color: rgb(255, 233, 160); }
+
+.row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; =
+margin-top: 6px; }
+
+.col { display: flex; flex-direction: column; gap: 12px; align-items: stret=
+ch; width: min(360px, 90vw); }
+
+button.small { background: rgb(42, 22, 56); color: rgb(255, 255, 255); bord=
+er: var(--b) solid var(--pink); padding: 8px 16px; box-shadow: 4px 4px 0 va=
+r(--ink); }
+
+button.small:hover { background: var(--pink); color: var(--ink); }
+
+button.small:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0=
+ var(--ink); }
+
+button.big { background: var(--yellow); color: var(--ink); padding: 12px 24=
+px; font-size: var(--fs); border: var(--b) solid var(--ink); box-shadow: 6p=
+x 6px 0 var(--pink); }
+
+button.big:hover { background: rgb(255, 240, 106); transform: translate(-2p=
+x, -2px); box-shadow: 8px 8px 0 var(--pink); }
+
+button.big:active { transform: translate(3px, 3px); box-shadow: 3px 3px 0 v=
+ar(--pink); }
+
+button.big.danger { background: rgb(255, 74, 106); color: rgb(255, 255, 255=
+); }
+
+button.big b { display: inline-block; background: var(--ink); color: var(--=
+yellow); padding: 0px 8px; margin-right: 8px; font-weight: normal; }
+
+button:disabled { opacity: 0.45; cursor: default; transform: none !importan=
+t; }
+
+.foot { position: absolute; bottom: 8px; font-size: 20px; opacity: 0.55; }
+
+.note { max-width: 760px; text-align: center; color: rgb(240, 216, 234); li=
+ne-height: 1.3; }
+
+.note.small { font-size: 20px; opacity: 0.85; }
+
+.back { margin-top: 6px; }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; =
+}
+
+.tabs button { background: rgb(42, 22, 56); color: rgb(255, 255, 255); bord=
+er: var(--b) solid #5a2a6a; padding: 6px 12px; }
+
+.tabs button.on { background: var(--pink); border-color: var(--ink); color:=
+ var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+
+.item { background: var(--panel); border: var(--b) solid #5a2a6a; padding: =
+10px; text-align: center; color: rgb(255, 255, 255); display: flex; flex-di=
+rection: column; gap: 6px; align-items: center; box-shadow: 4px 4px 0 var(-=
+-ink); }
+
+.item .sw { width: 64px; height: 36px; border: var(--b) solid var(--ink); }
+
+.item .ic { font-size: 30px; line-height: 36px; height: 36px; }
+
+.item .st { font-size: 20px; color: var(--yellow); }
+
+.item.eq { border-color: var(--yellow); }
+
+.item.lock .st { color: var(--pink2); }
+
+.item:hover { border-color: var(--pink); }
+
+.form { display: flex; flex-direction: column; gap: 12px; width: min(560px,=
+ 94vw); background: var(--panel); border: var(--b) solid var(--pink); paddi=
+ng: 16px 18px; box-shadow: 8px 8px 0 var(--ink); }
+
+.form label { display: flex; justify-content: space-between; align-items: c=
+enter; gap: 12px; }
+
+.form label.chk { justify-content: flex-start; }
+
+.seg { display: inline-flex; border: var(--b) solid var(--pink); flex-wrap:=
+ wrap; }
+
+.seg button { background: rgb(42, 22, 56); color: rgb(255, 255, 255); paddi=
+ng: 4px 10px; }
+
+.seg button.on { background: var(--pink); color: var(--ink); }
+
+input[type=3D"range"] { appearance: none; width: 190px; height: 20px; backg=
+round: transparent; cursor: pointer; }
+
+input[type=3D"range"]::-webkit-slider-runnable-track { height: 8px; backgro=
+und: var(--ink); border: 2px solid var(--pink2); }
+
+input[type=3D"range"]::-webkit-slider-thumb { appearance: none; width: 14px=
+; height: 22px; margin-top: -9px; background: var(--yellow); border: 3px so=
+lid var(--ink); }
+
+input[type=3D"checkbox"] { appearance: none; width: 22px; height: 22px; mar=
+gin: 0px; background: var(--ink); border: 3px solid var(--pink2); cursor: p=
+ointer; position: relative; flex: 0 0 auto; }
+
+input[type=3D"checkbox"]:checked { background: var(--yellow); box-shadow: i=
+nset 0 0 0 3px var(--ink); }
+
+input[type=3D"text"], input[type=3D"email"], input[type=3D"password"], sele=
+ct, textarea { font-family: var(--px); font-size: var(--fs); background: va=
+r(--ink); color: var(--yellow); border: var(--b) solid var(--pink); padding=
+: 6px 10px; outline: none; user-select: text; border-radius: 0px; }
+
+input[type=3D"text"]:focus, input[type=3D"email"]:focus, input[type=3D"pass=
+word"]:focus, select:focus, textarea:focus { border-color: var(--cyan); }
+
+.controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(3=
+00px, 1fr)); gap: 8px 22px; width: min(900px, 94vw); background: var(--pane=
+l); border: var(--b) solid var(--pink); padding: 16px; box-shadow: 8px 8px =
+0 var(--ink); }
+
+.controls b { font-weight: normal; color: var(--yellow); display: inline-bl=
+ock; min-width: 110px; }
+
+.loadbar { width: min(360px, 70vw); height: 20px; margin-top: 18px; backgro=
+und: var(--ink); border: var(--b) solid var(--yellow); padding: 2px; }
+
+.loadbar i { display: block; height: 100%; width: 0px; background: repeatin=
+g-linear-gradient(90deg, var(--yellow) 0 12px, #ffe98a 12px 16px); transiti=
+on: width 0.2s steps(6); }
+
+#loadErr { max-width: 620px; text-align: center; color: rgb(255, 154, 176);=
+ }
+
+#scrResults #resScore { font-size: calc(var(--fs2) * 2); color: var(--yello=
+w); text-shadow: 6px 6px 0 var(--pink), 12px 12px 0 var(--ink); line-height=
+: 1; }
+
+#resSub { color: rgb(240, 216, 234); text-align: center; }
+
+#resBest { color: var(--cyan); min-height: 20px; }
+
+#resStats { display: grid; grid-template-columns: repeat(auto-fit, minmax(2=
+30px, 1fr)); gap: 4px 20px; width: min(760px, 94vw); background: var(--pane=
+l); padding: 12px 16px; border: var(--b) solid #5a2a6a; box-shadow: 6px 6px=
+ 0 var(--ink); }
+
+#resStats span { color: var(--yellow); float: right; }
+
+#resBank { color: var(--yellow); }
+
+#resUnlock { color: var(--pink2); min-height: 20px; text-align: center; }
+
+#fsBtn { position: absolute; top: 12px; right: 12px; width: 44px; height: 4=
+4px; background: var(--ink); color: var(--yellow); border: var(--b) solid v=
+ar(--pink); line-height: 1; z-index: 20; box-shadow: rgb(0, 0, 0) 4px 4px 0=
+px; }
+
+#fsBtn:hover { background: var(--pink); color: var(--ink); }
+
+#lockHint { position: absolute; left: 50%; top: 58%; transform: translateX(=
+-50%); background: var(--ink); border: var(--b) solid var(--yellow); color:=
+ var(--yellow); padding: 10px 22px; pointer-events: none; animation: 1s ste=
+ps(2) 0s infinite normal none running pulse; box-shadow: 6px 6px 0 var(--pi=
+nk); }
+
+@keyframes pulse {=20
+  50% { color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); }
+}
+
+#hud { position: absolute; inset: 0px; pointer-events: none; }
+
+.pix { --s: var(--pxs, 3); display: block; height: calc(9px * var(--s)); wi=
+dth: auto; image-rendering: crisp-edges; }
+
+.pix.sm { --s: max(2, calc(var(--pxs, 3) - 1)); }
+
+.pix.lg { --s: calc(var(--pxs, 3) + 2); }
+
+#areaBox { position: absolute; top: 14px; left: 14px; display: flex; flex-d=
+irection: column; gap: 6px; }
+
+#minimapWrap { position: absolute; top: 12px; right: 64px; width: 124px; he=
+ight: 124px; border-radius: 50%; overflow: hidden; border: 4px solid var(--=
+ink); box-shadow: 0 0 0 4px var(--pink); background: rgb(12, 6, 16); }
+
+#minimap { width: 124px; height: 124px; image-rendering: pixelated; }
+
+#topCenter { position: absolute; top: 12px; left: 50%; transform: translate=
+X(-50%); display: flex; flex-direction: column; align-items: center; gap: 6=
+px; }
+
+#bossBar { margin-top: 4px; width: min(420px, 60vw); display: flex; flex-di=
+rection: column; align-items: center; gap: 4px; }
+
+#bossBar .bar { width: 100%; height: 16px; background: var(--ink); border: =
+4px solid var(--ink); box-shadow: rgb(255, 74, 106) 0px 0px 0px 3px; overfl=
+ow: hidden; }
+
+#bossBar .fill { height: 100%; width: 100%; background: rgb(255, 34, 85); b=
+ox-shadow: rgb(255, 138, 160) 0px 4px 0px inset; transition: width 0.15s st=
+eps(4); }
+
+#topRight { position: absolute; top: 148px; right: 64px; display: flex; fle=
+x-direction: column; align-items: flex-end; gap: 6px; }
+
+#fps { font-size: 20px; background: rgba(0, 0, 0, 0.667); padding: 2px 8px;=
+ white-space: pre; text-align: left; line-height: 1.2; }
+
+#arrow { position: absolute; top: 96px; left: 50%; width: 120px; margin-lef=
+t: -60px; text-align: center; }
+
+#arrow .tri { width: 0px; height: 0px; margin: 0px auto; border-left: 16px =
+solid transparent; border-right: 16px solid transparent; border-bottom: 30p=
+x solid var(--cyan); filter: drop-shadow(3px 3px 0 var(--ink)); }
+
+#arrow.gold .tri { border-bottom-color: var(--yellow); }
+
+#arrow .dist { font-size: 20px; text-shadow: rgb(0, 0, 0) 2px 2px 0px; marg=
+in-top: 2px; }
+
+#crosshair { position: absolute; left: 50%; top: 50%; width: 0px; height: 0=
+px; }
+
+#crosshair i { position: absolute; background: rgb(255, 255, 255); box-shad=
+ow: rgb(0, 0, 0) 2px 2px 0px; }
+
+#crosshair i:nth-child(1) { width: 2px; height: 8px; left: -1px; top: -14px=
+; }
+
+#crosshair i:nth-child(2) { width: 2px; height: 8px; left: -1px; top: 6px; =
+}
+
+#crosshair i:nth-child(3) { width: 8px; height: 2px; left: -14px; top: -1px=
+; }
+
+#crosshair i:nth-child(4) { width: 8px; height: 2px; left: 6px; top: -1px; =
+}
+
+#hitmarker { position: absolute; left: -12px; top: -12px; width: 24px; heig=
+ht: 24px; opacity: 0; transform: rotate(45deg); }
+
+#hitmarker::before, #hitmarker::after { content: ""; position: absolute; ba=
+ckground: rgb(255, 255, 255); }
+
+#hitmarker::before { left: 11px; top: 0px; width: 2px; height: 24px; }
+
+#hitmarker::after { top: 11px; left: 0px; height: 2px; width: 24px; }
+
+#hitmarker.kill::before, #hitmarker.kill::after { background: var(--red); }
+
+#bottomLeft { position: absolute; left: 14px; bottom: 14px; display: flex; =
+flex-direction: column; gap: 6px; align-items: flex-start; }
+
+#pxWings.pulse { animation: 0.4s steps(2) 0s 1 normal none running bpulse; =
+transform-origin: left center; }
+
+@keyframes bpulse {=20
+  50% { transform: scale(1.15); }
+}
+
+.pbar { display: flex; flex-direction: row-reverse; justify-content: flex-e=
+nd; align-items: center; gap: 8px; }
+
+.pbar .track { width: calc(56px * var(--pxs, 3)); height: calc(4px * var(--=
+pxs, 3) + 2px); background: var(--ink); border: 3px solid var(--ink); box-s=
+hadow: rgba(255, 255, 255, 0.333) 0px 0px 0px 2px; }
+
+.pbar .track i { display: block; height: 100%; width: 100%; transition: wid=
+th 0.2s steps(5); }
+
+.pbar.blue .track i { background: rgb(63, 168, 255); box-shadow: rgb(159, 2=
+14, 255) 0px 3px 0px inset; }
+
+.pbar.pink .track i { background: var(--pink); box-shadow: rgb(255, 154, 22=
+4) 0px 3px 0px inset; }
+
+.pbar.low .track i { animation: 0.5s steps(2) 0s infinite normal none runni=
+ng blinkTxt; }
+
+@keyframes blinkTxt {=20
+  50% { opacity: 0.35; }
+}
+
+#prompt { position: absolute; left: 50%; bottom: 18%; transform: translateX=
+(-50%); color: rgb(255, 255, 255); background: var(--ink); border: var(--b)=
+ solid var(--yellow); padding: 4px 14px; white-space: nowrap; box-shadow: r=
+gb(0, 0, 0) 4px 4px 0px; }
+
+#prompt:empty { display: none; }
+
+#toasts { position: absolute; left: 50%; bottom: 25%; transform: translateX=
+(-50%); z-index: 40; pointer-events: none; display: flex; flex-direction: c=
+olumn-reverse; align-items: center; gap: 8px; }
+
+.toast { font-size: 20px; background: var(--ink); border: 3px solid var(--p=
+ink); padding: 4px 12px; animation: 0.15s steps(3) 0s 1 normal none running=
+ tin; max-width: 80vw; text-align: center; box-shadow: rgb(0, 0, 0) 4px 4px=
+ 0px; line-height: 1.25; }
+
+.toast.score { border-color: var(--yellow); color: var(--yellow); }
+
+@keyframes tin {=20
+  0% { transform: translateY(10px); opacity: 0; }
+}
+
+#banner { position: absolute; left: 50%; top: 22%; transform: translateX(-5=
+0%); text-align: center; animation: 0.3s steps(4) 0s 1 normal none running =
+bin; }
+
+#banner .t { font-size: var(--fs2); color: var(--yellow); text-shadow: 4px =
+4px 0 var(--pink), 8px 8px 0 var(--ink); white-space: nowrap; }
+
+#banner .s { font-size: 20px; text-shadow: rgb(0, 0, 0) 2px 2px 0px; max-wi=
+dth: 760px; margin: 6px auto 0px; }
+
+@keyframes bin {=20
+  0% { transform: translateX(-50%) scale(0.3); opacity: 0; }
+}
+
+#hint { position: absolute; right: 14px; bottom: 12px; font-size: 20px; opa=
+city: 0.7; text-shadow: rgb(0, 0, 0) 2px 2px 0px; transition: opacity 2s; }
+
+#floaters .ft { position: absolute; left: 0px; top: 0px; font-size: 20px; c=
+olor: var(--yellow); text-shadow: 2px 2px 0 #000, 4px 4px 0 var(--pink); wh=
+ite-space: nowrap; will-change: transform; }
+
+#dmgDir { position: absolute; left: 50%; top: 50%; width: 240px; height: 24=
+0px; margin: -120px; border-radius: 50%; border-top: 10px solid rgba(255, 4=
+0, 70, 0.9); opacity: 0; }
+
+#vignette { position: absolute; inset: 0px; box-shadow: rgba(255, 20, 50, 0=
+.9) 0px 0px 160px inset; opacity: 0; }
+
+#golden { position: absolute; inset: 0px; box-shadow: rgba(255, 200, 40, 0.=
+6) 0px 0px 120px inset; opacity: 0; transition: opacity 0.4s; }
+
+#caption { position: absolute; left: 50%; top: 11%; transform: translateX(-=
+50%); text-align: center; pointer-events: none; width: 92vw; }
+
+#caption .t { font-size: var(--fs2); color: rgb(255, 255, 255); text-shadow=
+: 4px 4px 0 var(--pink), 8px 8px 0 #000; }
+
+#caption .s { color: var(--yellow); text-shadow: rgb(0, 0, 0) 2px 2px 0px; =
+margin-top: 6px; }
+
+#bigText { position: absolute; inset: 0px; display: flex; flex-direction: c=
+olumn; align-items: center; justify-content: center; pointer-events: none; =
+background: rgba(40, 0, 10, 0.55); }
+
+#bigText .t { font-size: calc(var(--fs2) * 1.5); color: var(--red); text-sh=
+adow: rgb(0, 0, 0) 6px 6px 0px; text-align: center; animation: 0.3s steps(4=
+) 0s 1 normal none running bin; transform: none; }
+
+#bigText .s { text-shadow: rgb(0, 0, 0) 2px 2px 0px; }
+
+#choice { position: absolute; left: 50%; bottom: 7%; transform: translateX(=
+-50%); display: flex; gap: 22px; flex-wrap: nowrap; justify-content: center=
+; width: max-content; max-width: 96vw; }
+
+#skipBtn { position: absolute; right: 64px; top: 14px; }
+
+#skipBtn span { opacity: 0.6; }
+
+@media (max-width: 900px), (max-height: 560px) {
+  #minimapWrap, #minimap { width: 96px; height: 96px; }
+  #topRight { top: 118px; }
+  #hint { display: none; }
+}
+
+@media (max-height: 560px) {
+  .screen { gap: 8px; padding: 10px; }
+  .col { gap: 8px; }
+  .logo { font-size: 80px; }
+  button.big { padding: 8px 18px; }
+  button.small { padding: 6px 12px; }
+  .mode, .daily { padding: 8px 10px; }
+  .modes { margin-top: 4px; }
+  #caption { top: 6%; }
+  #banner { top: 16%; }
+}
+
+.daily.online { background: var(--cyan); color: var(--ink); box-shadow: 6px=
+ 6px 0 var(--pink); }
+
+.daily.online .d { color: rgb(18, 48, 58); }
+
+.form.online { align-items: center; text-align: center; }
+
+.form.online .who { display: flex; gap: 10px; align-items: center; justify-=
+content: center; flex-wrap: wrap; }
+
+.form.online .who b { font-weight: normal; color: var(--yellow); }
+
+.form.online .join { display: flex; gap: 12px; align-items: center; justify=
+-content: center; flex-wrap: wrap; }
+
+.form.online input { letter-spacing: 0.2em; text-transform: uppercase; widt=
+h: 9em; text-align: center; }
+
+#pxNet { visibility: hidden; margin-top: 2px; }
+
+.form.wide { width: min(820px, 96vw); }
+
+.form label.gfxpick { align-items: flex-start; }
+
+.seg button.shaderbtn { color: rgb(255, 90, 58); }
+
+#scrAccount .row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+#scrAccount label input { flex: 1 1 0%; min-width: 0px; }
+
+#scrAccount a { color: var(--cyan); }
+
+.autosaved { position: absolute; right: 14px; bottom: 48px; z-index: 40; fo=
+nt-size: 16px; color: rgb(125, 255, 154); opacity: 0; pointer-events: none;=
+ text-shadow: rgb(0, 0, 0) 2px 2px 0px; }
+
+.autosaved.show { animation: 1.8s ease-out 0s 1 normal none running autosav=
+ed; }
+
+@keyframes autosaved {=20
+  0% { opacity: 0; }
+  12% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.giftpop { position: absolute; left: 50%; top: 16%; transform: translateX(-=
+50%); z-index: 45; text-align: center; opacity: 0; pointer-events: none; ba=
+ckground: var(--ink); border: 4px solid var(--yellow); box-shadow: rgb(0, 0=
+, 0) 8px 8px 0px; padding: 12px 26px 14px; }
+
+.giftpop .t { font-size: var(--fs2); color: var(--yellow); text-shadow: 4px=
+ 4px 0 var(--pink), 8px 8px 0 var(--ink); white-space: nowrap; }
+
+.giftpop .s { font-size: 24px; color: rgb(255, 255, 255); margin-top: 8px; =
+white-space: nowrap; }
+
+.giftpop.show { animation: 5s ease-out 0s 1 normal none running giftpop; }
+
+@keyframes giftpop {=20
+  0% { opacity: 0; transform: translateX(-50%) scale(0.3); }
+  6% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+  10% { transform: translateX(-50%) scale(1); }
+  85% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) scale(1); }
+}
+
+#btnPacks { align-self: flex-start; }
+
+.packs { display: flex; gap: 16px; width: min(1100px, 96vw); align-items: f=
+lex-start; }
+
+.packlist { display: flex; flex-direction: column; gap: 6px; width: 250px; =
+flex: 0 0 auto; max-height: 70vh; overflow-y: auto; }
+
+.packitem { text-align: left; background: var(--ink); color: rgb(255, 255, =
+255); border: 3px solid rgba(255, 255, 255, 0.2); padding: 6px 10px; }
+
+.packitem.sel { border-color: var(--yellow); }
+
+.packitem.on { color: var(--yellow); }
+
+.packinfo { flex: 1 1 0%; min-width: 0px; background: var(--panel); border:=
+ var(--b) solid var(--pink); padding: 12px 14px; box-shadow: 8px 8px 0 var(=
+--ink); max-height: 72vh; overflow-y: auto; }
+
+.packname { font-size: var(--fs2); color: var(--yellow); margin-bottom: 4px=
+; }
+
+.packinfo .row { flex-wrap: wrap; gap: 8px; margin: 10px 0px; }
+
+#packCode { width: 100%; box-sizing: border-box; font-size: 16px; }
+
+@media (max-width: 760px) {
+  .packs { flex-direction: column; }
+  .packlist { width: 100%; max-height: 30vh; }
+}
+
+.gsibox { min-height: 44px; display: flex; align-items: center; color: var(=
+--yellow); }
+
+.seg button.shaderbtn.on { background: rgb(255, 58, 42); color: rgb(255, 25=
+5, 255); }
+
+.note.warnnote { color: rgb(255, 106, 74); }
+
+.shaderwarn { position: fixed; left: 50%; top: 50%; transform: translate(-5=
+0%, -50%); z-index: 60; width: min(640px, 92vw); background: rgb(26, 6, 6);=
+ border: calc(var(--b) * 2) solid #ff3a2a; box-shadow: 0 0 0 6px #ffd23f, 1=
+2px 12px 0 var(--ink); padding: 22px 24px; text-align: center; animation: 0=
+.5s steps(2) 0s infinite normal none running swShake; }
+
+.shaderwarn .sw-title { font-size: 44px; color: rgb(255, 210, 63); letter-s=
+pacing: 2px; }
+
+.shaderwarn .sw-big { font-size: 34px; color: rgb(255, 74, 58); margin: 10p=
+x 0px; }
+
+.shaderwarn .sw-boom { font-size: 24px; color: rgb(255, 255, 255); margin: =
+8px 0px 12px; }
+
+.shaderwarn .sw-small { font-size: 16px; color: rgb(216, 176, 176); margin-=
+bottom: 16px; }
+
+.shaderwarn .sw-row { display: flex; gap: 12px; justify-content: center; fl=
+ex-wrap: wrap; }
+
+.shaderwarn #shaderYes { background: rgb(255, 58, 42); color: rgb(255, 255,=
+ 255); }
+
+@keyframes swShake {=20
+  0% { transform: translate(-50%, -50%); }
+  50% { transform: translate(calc(-50% + 2px), calc(-50% - 1px)); }
+}
+
+.form label.gfxpick .seg { justify-content: flex-end; max-width: 640px; }
+
+.gfxgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(34=
+0px, 1fr)); gap: 8px 20px; border-top: var(--b) solid #5a2a6a; border-botto=
+m: var(--b) solid #5a2a6a; padding: 10px 0px; }
+
+.gfxrow { display: flex; justify-content: space-between; align-items: cente=
+r; gap: 10px; font-size: 20px; }
+
+.gfxrow .rng { display: inline-flex; align-items: center; gap: 8px; }
+
+.gfxrow .rng input[type=3D"range"] { width: 140px; }
+
+.gfxrow .val { font-weight: normal; color: var(--yellow); min-width: 64px; =
+text-align: right; }
+
+.gfxrow .seg button { padding: 2px 8px; font-size: 20px; }
+
+.notes { width: min(860px, 94vw); max-height: 64vh; overflow-y: auto; backg=
+round: var(--panel); border: var(--b) solid var(--pink); padding: 14px 18px=
+; box-shadow: 8px 8px 0 var(--ink); text-align: left; }
+
+.nsec + .nsec { margin-top: 18px; padding-top: 14px; border-top: var(--b) s=
+olid #5a2a6a; }
+
+.nh { color: var(--yellow); margin-bottom: 6px; }
+
+.ni { font-size: 20px; padding-left: 16px; text-indent: -16px; margin: 4px =
+0px; color: rgb(240, 216, 234); line-height: 1.25; }
+
+#lobbyHud { position: absolute; inset: 0px; pointer-events: none; }
+
+.lhTop { position: absolute; top: 14px; left: 14px; display: flex; flex-dir=
+ection: column; gap: 8px; align-items: flex-start; }
+
+.xpbar { width: calc(64px * var(--pxs, 3)); height: calc(3px * var(--pxs, 3=
+) + 4px); background: var(--ink); border: 3px solid var(--ink); box-shadow:=
+ rgba(255, 255, 255, 0.333) 0px 0px 0px 2px; }
+
+.xpbar i { display: block; height: 100%; width: 0px; background: var(--cyan=
+); box-shadow: rgb(184, 244, 255) 0px 3px 0px inset; transition: width 0.3s=
+ steps(6); }
+
+.lhPts { position: absolute; top: 14px; right: 68px; }
+
+.lhHint { position: absolute; right: 14px; bottom: 12px; font-size: 20px; o=
+pacity: 0.7; text-shadow: rgb(0, 0, 0) 2px 2px 0px; }
+
+#lprompt { position: absolute; left: 50%; bottom: 16%; transform: translate=
+X(-50%); color: rgb(255, 255, 255); background: var(--ink); border: var(--b=
+) solid var(--yellow); padding: 4px 14px; white-space: nowrap; box-shadow: =
+rgb(0, 0, 0) 4px 4px 0px; }
+
+#lprompt:empty { display: none; }
+
+@media (max-width: 900px), (max-height: 560px) {
+  .lhHint { display: none; }
+}
+
+#scrPortal, #scrLobbyMenu { background: rgba(12, 6, 16, 0.6); }
+
+.form.portal { align-items: center; text-align: center; }
+
+.form.portal .row { margin-top: 4px; }
+
+.screen.side { pointer-events: none; background: transparent; align-items: =
+flex-end; justify-content: flex-start; padding: 0px; overflow: hidden; }
+
+.screen.side::before, .screen.side::after { display: none; }
+
+.sidepanel { pointer-events: auto; width: min(640px, 52vw); height: 100%; o=
+verflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding:=
+ 14px 18px 20px; background: rgba(12, 6, 16, 0.88); border-left: var(--b) s=
+olid var(--pink); box-shadow: -8px 0 0 var(--ink); }
+
+.sidepanel > * { flex-shrink: 0; }
+
+.sphead { display: flex; justify-content: space-between; align-items: cente=
+r; gap: 12px; margin-right: 52px; }
+
+.sphead h2 { margin: 0px; }
+
+.sidepanel .tabs { justify-content: flex-start; }
+
+.sidepanel .note { text-align: left; }
+
+.sidepanel .back { align-self: flex-start; }
+
+.sidepanel .form.wide { width: 100%; padding: 12px 14px; box-shadow: 6px 6p=
+x 0 var(--ink); }
+
+.dragHint { position: absolute; left: calc(0.5 * (100% - min(640px, 52vw)))=
+; bottom: 22px; transform: translateX(-50%); font-size: 20px; color: rgb(25=
+5, 255, 255); opacity: 0.8; text-shadow: rgb(0, 0, 0) 2px 2px 0px; white-sp=
+ace: nowrap; pointer-events: none; }
+
+.ward { display: flex; flex-direction: column; gap: 12px; }
+
+.ward .grid { display: grid; grid-template-columns: repeat(auto-fill, minma=
+x(150px, 1fr)); gap: 10px; }
+
+.ward .grid.small { grid-template-columns: repeat(auto-fill, minmax(120px, =
+1fr)); }
+
+.ward .item { padding: 8px; font-size: 20px; }
+
+.ward .item.soon { opacity: 0.5; }
+
+.ward .item.soon .st { color: rgb(187, 187, 187); }
+
+.ward .sub { color: var(--yellow); }
+
+.crow { display: flex; justify-content: space-between; align-items: center;=
+ gap: 10px; flex-wrap: wrap; font-size: 20px; }
+
+.sws { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; justi=
+fy-content: flex-end; max-width: 100%; }
+
+.csw { width: 26px; height: 26px; padding: 0px; border: 3px solid var(--ink=
+); box-shadow: rgb(0, 0, 0) 2px 2px 0px; }
+
+.csw.on { outline: 3px solid var(--yellow); outline-offset: 1px; }
+
+.csw:hover { transform: translate(-1px, -1px); }
+
+input[type=3D"color"] { width: 42px; height: 30px; padding: 0px; border: 3p=
+x solid var(--pink); background: var(--ink); cursor: pointer; }
+
+.crow .seg button { font-size: 20px; padding: 2px 8px; }
+
+@media (max-width: 760px) {
+  .sidepanel { width: 100%; height: 56%; margin-top: auto; border-left: 0px=
+; border-top: var(--b) solid var(--pink); box-shadow: 0 -8px 0 var(--ink); =
+}
+  .dragHint { left: 50%; bottom: auto; top: 12px; }
+}
+
+#wepBox { position: absolute; right: 14px; bottom: 44px; display: flex; fle=
+x-direction: column; align-items: flex-end; gap: 6px; }
+
+#pxWep.pulse { animation: 0.35s steps(2) 0s 1 normal none running bpulse; t=
+ransform-origin: right center; }
+
+.pbar.gold .track i { background: var(--yellow); box-shadow: rgb(255, 243, =
+168) 0px 3px 0px inset; }
+
+.pbar.gold.low .track i { background: var(--red); box-shadow: rgb(255, 154,=
+ 168) 0px 3px 0px inset; }
+
+#wepBar { flex-direction: row-reverse; }
+
+@media (max-width: 900px), (max-height: 560px) {
+  #wepBox { bottom: 14px; }
+}
+
+.witem .lv { font-size: 20px; color: var(--cyan); }
+
+.witem .ds { font-size: 20px; color: rgb(216, 200, 228); line-height: 1.2; =
+text-align: left; }
+
+.witem.nolv { opacity: 0.6; }
+
+.ward .grid.weps { grid-template-columns: repeat(auto-fill, minmax(180px, 1=
+fr)); }
+
+.form.host .sub { color: var(--yellow); margin-top: 4px; }
+
+.form.host .seg { align-self: flex-start; }
+
+.evgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(19=
+0px, 1fr)); gap: 8px; }
+
+.evgrid button.small { font-size: 20px; padding: 6px 8px; }
+
+.evgrid button.small.on, .form.host .seg button.on { background: var(--pink=
+); color: var(--ink); }
+
+.form.online .sub { color: var(--yellow); align-self: stretch; text-align: =
+left; margin-top: 4px; }
+
+.rooms { align-self: stretch; display: flex; flex-direction: column; gap: 6=
+px; max-height: 32vh; overflow-y: auto; text-align: left; font-size: 20px; =
+}
+
+.roomrow { display: grid; grid-template-columns: auto 1fr auto auto; gap: 1=
+0px; align-items: center; background: var(--ink); border: 3px solid rgb(90,=
+ 42, 106); padding: 6px 8px; }
+
+.roomrow b { font-weight: normal; color: var(--yellow); letter-spacing: 0.1=
+2em; }
+
+.roomrow .ri { color: rgb(240, 216, 234); }
+
+.roomrow button.small { padding: 4px 10px; font-size: 20px; }
+
+#watchHud { position: absolute; top: 12px; left: 50%; transform: translateX=
+(-50%); display: flex; flex-direction: column; align-items: center; gap: 6p=
+x; pointer-events: none; }
+
+#watchHud .wh { font-size: 20px; text-shadow: rgb(0, 0, 0) 2px 2px 0px; opa=
+city: 0.8; }
+
+#watchHud button { pointer-events: auto; }
+
+.form.online input[type=3D"checkbox"] { width: 22px; letter-spacing: 0px; }
+
+.form.online label.chk { align-self: center; display: flex; gap: 10px; alig=
+n-items: center; font-size: 20px; }
+
+#betaBtn { position: fixed; left: 12px; bottom: 150px; z-index: 30; font: 1=
+4px / 1 HorsePixel, monospace; padding: 8px 12px; background: rgba(18, 6, 2=
+8, 0.88); color: rgb(255, 210, 63); border: 2px solid rgb(255, 210, 63); bo=
+rder-radius: 4px; cursor: pointer; animation: 1.6s ease-in-out 0s infinite =
+normal none running betaPulse; }
+
+#betaBtn.hidden { display: none; }
+
+@keyframes betaPulse {=20
+  50% { box-shadow: rgb(255, 210, 63) 0px 0px 14px; }
+}
+
+#voiceBtn { position: fixed; left: 12px; bottom: 150px; z-index: 30; font: =
+13px / 1 HorsePixel, monospace; padding: 7px 10px; background: rgba(18, 6, =
+28, 0.82); color: rgb(207, 195, 216); border: 2px solid rgb(90, 58, 106); b=
+order-radius: 4px; cursor: pointer; }
+
+#voiceBtn.on { color: rgb(125, 255, 154); border-color: rgb(125, 255, 154);=
+ }
+
+#voiceBtn.muted { color: rgb(255, 90, 106); border-color: rgb(255, 90, 106)=
+; }
+
+#voiceBtn.hidden { display: none; }
+
+#espCanvas { position: fixed; inset: 0px; width: 100%; height: 100%; pointe=
+r-events: none; z-index: 8; }
+
+#espCanvas.hidden { display: none; }
+
+#liftBody { display: grid; grid-template-columns: repeat(auto-fill, minmax(=
+260px, 1fr)); gap: 8px; width: min(760px, 100%); margin: 0px auto; }
+
+#liftBody .liftbtn { width: 100%; justify-content: center; }
+
+#liftBody .liftbtn:disabled { opacity: 0.75; cursor: default; }
+------MultipartBoundary--oOukqBwuq63PngjxD6HRO65MK2TP1b7wU4er0rG17n------
